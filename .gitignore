@@ -1,0 +1,17 @@
+.vscode/
+.vsconfig
+.vs/
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+/data/*.train
+/data/*.valid
+/data/dumps/
+/data/alfinans.dump
+/data/av-cables.dump
+/data/cdon.dump
+/data/computersalg.dump
+/data/elgiganten.dump
+/data/komplett.dump
+/data/power.dump
+/data/telia.dump
+/data/fasttext_trained_model.bin
