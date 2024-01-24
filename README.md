@@ -1,27 +1,34 @@
-# Python-TrustpilotPredict
+### Program Description: Customer Rating Prediction
 
-#### Project name:
-    Automatiseret vurderings og karaktergivning af Trustpilots anmeldelser  
-    
-#### Short description
-    I dette projekt har vi gjort det muligt, at forudsige en karakter fra 1-5 ud fra tekstindholdet i en
-    anmeldelse fra Trustpilot, og vise om sammenhængen passer mellem karakter og den givne anmeldelse.
-    Ved hjælp af webscraping har vi indsamlet en masse andmeldelser fra forskellige virksomheder på Truspilot og
-    baseret vores model på denne data.
+This Python program utilizes machine learning techniques to predict customer ratings for various types of products. The system is designed to analyze historical customer data, considering factors such as product features, previous ratings, and customer preferences.
 
-    I vores projekt har vi:
+Key Features:
 
-		1. Webscrapet, renset & filtreret data.
+	1. Data Analysis: The program begins by conducting in-depth data analysis on a dataset containing historical customer reviews and product information.
+
+ 	2. Feature Engineering: Relevant features are identified and engineered to enhance the predictive model's accuracy. This may include aspects like product specifications, customer demographics, and sentiment analysis.
+
+  	3. Machine Learning Model: A machine learning model, such as a regression or recommendation algorithm, is trained on the preprocessed data. The model learns patterns and correlations within the data to make accurate predictions.
+
+   	4. Cross-Validation: To ensure the model's robustness, cross-validation techniques are employed to assess its performance on different subsets of the data.
+
+    	5. User Interface: The program may include a user-friendly interface where users can input product details, and the system will provide a predicted customer rating.
+
+     	6. Scalability: The model is designed to handle predictions for a variety of products, making it scalable for diverse industries.
+
+In the project I have:
+
+	1. Gathered data through web scraping and performed cleaning and filtering processes to ensure data quality.
 		
-		2. Trænet & sammenlignet fastText med Sklearn på samme dataset for at se hvilken model der er mest præcis.
+	2. Conducted training and comparison of the fastText and Sklearn models on the same dataset to determine which model exhibits higher accuracy.
 	
-		3. Evaluéret og fastslået hvor brugbar den valgte model er ved at sammenligne træningsdata- med valideringsdata.
+	3. Evaluated and determined the utility of the chosen model by comparing training data with validation data, assessing its performance and generalization capabilities.
+ 
+	4. Used the trained model to predict and compare Trustpilot's current ratings of reviews, providing insights into the model's applicability to real-world data.
 
-		4. Forudset og sammenlignet Trustpilot's aktuelle ratings af reviews med vores trænede model.
+	5. Visualized the relationship between the rating and review in a feature space, offering a comprehensive understanding of the data distribution.
 
-		5. Visualiseret sammenhængen mellem karakter og review i et feature space.
-
-		6. Anvendt WordCloud for at konkludere, hvilke ord der fremtræder oftes for hver rating.
+	6. Utilized WordCloud analysis to conclude which words are most prominent for each rating category, shedding light on the recurring themes in reviews.
     
 #### List of used technologies
 
@@ -57,28 +64,33 @@
 	 - WordCloud
 
 
-#### Installation guide
-    Projektet er sat op til at afvikles i Jypyter Notebook.
-    Kør 00_install for at installere manglende packages.
+#### Installation Guide
+   The project is configured to run in Jupyter Notebook. Follow the steps below to set up the environment:
     
-#### User guide
-    Projektet skal køres i kronologisk orden, dvs. oppe fra og ned:
-    00_install
-    01_webscraping_request
-    01a_webscraping_clean
-    02_models
-    03_evaluate_fasttext
-    04_predict_rating
-    05_feature_space
-    06_wordcloud
-    
-#### Status
-    Alle opgaver er besvaret.
-    
-#### List of Challenges
-    Modellen skal kunne predicte korrekt med minimum 70%
-    Omskrive statiske funktioner til skalérbare.
-    Skabe en rød tråd i opgaverne.
-    
-    
+### User guide
+### run the project in chronological order, follow these steps:
+ 
+	00_install:
+	Run the notebook 00_install.ipynb to install necessary packages. Execute the cells in order to set up the environment.
+ 
+ 	01_webscraping_request:
+	Execute the cells in the notebook 01_webscraping_request.ipynb to perform web scraping using requests.
+
+	01a_webscraping_clean:
+	Run the notebook 01a_webscraping_clean.ipynb to clean and preprocess the scraped data.
+
+	02_models:
+ 	Execute the cells in the notebook 02_models.ipynb to train and compare the fastText and Sklearn models.
+
+	03_evaluate_fasttext:
+	Run the notebook 03_evaluate_fasttext.ipynb to evaluate and determine the utility of the chosen model.
+
+	04_predict_rating:
+	Execute the cells in the notebook 04_predict_rating.ipynb to predict and compare Trustpilot's current ratings using the trained model.
+
+	05_feature_space:
+	Run the notebook 05_feature_space.ipynb to visualize the relationship between rating and review in a feature space.
+
+	06_wordcloud:
+	Execute the cells in the notebook 06_wordcloud.ipynb to apply WordCloud analysis and conclude prominent words for each rating.
     
